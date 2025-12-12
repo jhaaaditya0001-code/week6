@@ -1,0 +1,31 @@
+import java.util.Scanner;
+public class District
+{
+    public static void main(String[] args)
+    {
+        Scanner input = new Scanner(System.in);
+
+        String[] district = {"Morang", "Kathmandu" , "Kaski" , "Sindhuli"};
+        int j = 1;
+        for(int i=0; i<district.length; i++){
+            System.out.println(j + ". " +  district[i]);
+            j++;
+        }
+
+        System.out.println("Enter the Number of District");
+        int districtNum = input.nextInt();
+        input.nextLine();
+
+        String[] updatedDistrict = new String[districtNum];
+        for(int i = 0 ; i < districtNum; i++){
+            System.out.println("Enter the Name of District");
+            updatedDistrict[i] = input.nextLine();
+
+        }
+
+        for(int i=0 ; i<districtNum; i++){
+            System.out.println(updatedDistrict[i]);
+
+        }
+    }
+}
