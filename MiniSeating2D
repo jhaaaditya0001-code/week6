@@ -1,0 +1,20 @@
+public class MiniSeating2D{
+    public static void main(String[] args){
+        
+        String[][] seats = new String[2][3];
+        seats[0][0] = "jk";
+        seats[0][1] = "ok";
+        seats[0][2] = "kk";
+        
+        for(int i = 0; i < seats.length; i++){
+            for(int j = 0; j < seats[i].length; j++){
+                if(seats[i][j] == null){
+                    System.out.print("[Empty] ");
+                }else{
+                    System.out.print("[" + seats[i][j] + "] ");
+                }
+            }
+            System.out.println();
+        }
+    }
+}
