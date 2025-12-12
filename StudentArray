@@ -1,0 +1,45 @@
+import java.util.Scanner;
+
+public class StudentArray
+{
+    public static void main(String[] args)
+    {
+    
+        String[] students = {"Saroj", "Sushant", "Ujjwal", "Rabina", "Sandesh"};
+        for(int i=0; i<students.length; i++){
+            System.out.println(students[i]);       
+        
+        }
+        
+        System.out.println(students[2]);
+        students[4]="Safal";
+        System.out.println(students[4]);
+        
+        Scanner input = new Scanner(System.in);
+        
+        System.out.println("Enter Your New Name");
+        String NewName = input.nextLine();
+        
+        String[] UpdatedStudents = new String[6];
+        
+        for(int i=0; i<students.length; i++){
+            UpdatedStudents[i] = students[i];   
+        
+        }
+        
+        UpdatedStudents[5] = NewName;
+        
+      for(int i=0; i<students.length; i++){
+          System.out.println(UpdatedStudents[i]);
+          
+      }
+        
+        
+        
+        
+        
+        
+    
+    }
+
+}
