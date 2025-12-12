@@ -1,0 +1,11 @@
+
+public class w6qn1
+{
+    public static void main(String[]args)
+    {
+        //int[] arr;
+        //Arr=new int[2];
+        int[] arr = new int[2]; 
+    
+    }
+}
